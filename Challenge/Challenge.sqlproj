@@ -16,7 +16,7 @@
     <ModelCollation>1033, CI</ModelCollation>
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <TargetLanguage>CS</TargetLanguage>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <SqlServerVerification>False</SqlServerVerification>
@@ -74,6 +74,11 @@
     <Compile Include="Extensions\StringEx.cs" />
     <Compile Include="Extensions\NumberEx.cs" />
     <Compile Include="Extensions\EnumEx.cs" />
+    <Compile Include="Core\User.cs" />
+    <Compile Include="Core\PermissionSet.cs" />
+    <Compile Include="Interfaces\IPermissionSet.cs" />
+    <Compile Include="Interfaces\IDataStore.cs" />
+    <Compile Include="Core\PermissionAutoGenStore.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Xml" />

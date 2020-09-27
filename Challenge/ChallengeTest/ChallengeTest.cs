@@ -84,6 +84,7 @@ namespace ChallengeTest
             Assert.True(b.Concat(b));
             Assert.Equal(string.Join(", ", friendly, friendly), b.Friendly); // Failed to get value");
             b = new BlobIO(bio);
+            //b.Set(2, "初めまして");
             Assert.Equal(friendly, b.Friendly); // Failed to get value");
             Assert.True(b.Set(4, BlobIO.Data(float.NaN, 0L, false, Guid.Empty, (byte[])null)));
             Assert.Equal("1, 1, '初めまして', 3.142, NULL, 0, False, '00000000-0000-0000-0000-000000000000', NULL, '01/01/1970 00:00:00'", b.Friendly); // Failed to get value");
