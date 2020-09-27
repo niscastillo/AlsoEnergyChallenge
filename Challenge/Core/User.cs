@@ -7,7 +7,6 @@ namespace AE.CoreUtility
 {
     public class User
     {
-
         public string UserName { get; set; }
         public DateTime CreateDate { get; set; }
         public List<string> PermissionList { get; set; }
